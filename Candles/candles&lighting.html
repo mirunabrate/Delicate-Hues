@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style-candles.css">
+    <script src="https://kit.fontawesome.com/9b09ceb685.js" crossorigin="anonymous"></script></head>
+<body >
+    <!-- Header -->
+        <header>
+            <div class="topnav" id="myTopnav">
+                <img src="../imagini/logo.png" class="logo">
+                <div>
+                    <a href="../Home/index.html">Home</a>
+                    <div class="dropdown">
+                    <button class="dropbtn">Products
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../Decor/decor.html">Decor</a>
+                        <a href="../Candles/candles&lighting.html" class="active">Candles & Lighting</a>
+                        <a href="../Tableware/tableware.html">Tableware</a>
+                        <a href="../Vases/vases&flowers.html">Vases & Flowers</a>
+                    </div>
+                    </div> 
+                    <a href="../Contact/contact.html">Contact</a>
+                    <a href="../Login/login.html"><abbr title="Sign In/Register" class="login-tab"><i class="fa-regular fa-user"></i></abbr></a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+            </div>
+        </header>
+    <main>
+        <div class="container">
+             <div id="slide">
+                 <div class="item" style="background-image: url(../imagini/light4.jpg);">
+                     <div class="content">
+                         <div class="name">CANDLES & LIGHTING</div>
+                         <div class="des">Brighten your space with our candles, chandeliers, table & floor lamps.</div>
+                         <button onclick="scrollToDecorInfoSection()">See more</button>
+                     </div>
+                 </div>
+                 <div class="item" style="background-image: url(../imagini/light7.jpg);">
+                     <div class="content">
+                         <div class="name">CANDLES & LIGHTING</div>
+                         <div class="des">Brighten your space with our candles, chandeliers, table & floor lamps.</div>
+                         <button onclick="scrollToDecorInfoSection()">See more</button>
+                     </div>
+                 </div>
+                 <div class="item" style="background-image: url(../imagini/light5.jpg);">
+                     <div class="content">
+                         <div class="name">CANDLES & LIGHTING</div>
+                         <div class="des">Brighten your space with our candles, chandeliers, table & floor lamps.</div>
+                         <button onclick="scrollToDecorInfoSection()">See more</button>
+                     </div>
+                 </div>
+                 <div class="item" style="background-image: url(../imagini/light6.jpg);">
+                     <div class="content">
+                         <div class="name">CANDLES & LIGHTING</div>
+                         <div class="des">Brighten your space with our candles, chandeliers, table & floor lamps.</div>
+                         <button onclick="scrollToDecorInfoSection()">See more</button>
+                     </div>
+                 </div>
+                 <div class="item" style="background-image: url(../imagini/light8.jpg);">
+                     <div class="content">
+                         <div class="name">CANDLES & LIGHTING</div>
+                         <div class="des">Brighten your space with our candles, chandeliers, table & floor lamps.</div>
+                         <button onclick="scrollToDecorInfoSection()">See more</button>
+                     </div>
+                 </div>
+                 <div class="item" style="background-image: url(../imagini/light9.jpg);">
+                     <div class="content">
+                         <div class="name">CANDLES & LIGHTING</div>
+                         <div class="des">Brighten your space with our candles, chandeliers, table & floor lamps.</div>
+                         <button onclick="scrollToDecorInfoSection()">See more</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="buttons">
+                 <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                 <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+             </div>
+        </div>
+
+        
+        <div class="decor-info-section" id="decor-info-section">
+            <h2>Luxury Candle Decor</h2>
+            <h3>Premium Candleware for Charming Interiors</h3>
+            <p>&nbsp; &nbsp; &nbsp; Candles have always been a popular home decor accessory, adding warmth and ambiance to any living space. In recent years, the demand for high-quality candleware has increased as people seek to elevate their home decor with unique and stylish candle accessories. With the convenience of online shopping, it's now easier than ever to find and purchase candleware products online. </p>
+            <h3>Designer Candle Decoration Items Makes it Easier to Spruce Up Your Home</h3>
+            <p>&nbsp; &nbsp; &nbsp;Candleware adds a touch of elegance and sophistication to any living space. It's a simple way to create a cozy and inviting atmosphere in your home. The soft glow of a candle can transform a room and create a relaxing environment. Additionally, candleware products are versatile and can be used in a variety of ways to create different moods and looks in your home.</p>
+        </div>
+
+        <!-- Products section -->
+       <section class="main-wrap">
+        <!-- Product 1 -->
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="../imagini/candle1.webp" id="productImg" alt="">
+                    <div class="controls">
+                        <span class="btn active"></span>
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>ORBIT GOLD & GLASS HURRICANE</h2>
+                        <h3>$159.99</h3>
+                        <p>17th century astronomical apparatus led us to a very 21st century candleholder. Orbit's eye-catching design wraps light stunningly by way of its own metal frame. Bring alive your den, living and dining spaces.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s">
+                                    <input type="radio" name="size" id="s">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m">
+                                    <input type="radio" name="size" id="m">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l">
+                                    <input type="radio" name="size" id="l">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white">
+                                    <input type="radio" name="color" id="white">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown">
+                                    <input type="radio" name="color" id="brown">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black">
+                                    <input type="radio" name="color" id="black">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2  -->
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="../imagini/candle4.webp" id="productImg2" alt="">
+                    <div class="controls">
+                        <span class="btn2 active"></span>
+                        <span class="btn2"></span>
+                        <span class="btn2"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>PILLAR CANDLE HOLDER</h2>
+                        <h3>$180.00</h3>
+                        <p>Stunning gold plating meets jet-toned ridged surface on an aluminium cast of a pillar in this modern candleholder. Bring the luxe of Prague's upper-crust home with this signature piece.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s-2">
+                                    <input type="radio" name="size" id="s-2">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m-2">
+                                    <input type="radio" name="size" id="m-2">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l-2">
+                                    <input type="radio" name="size" id="l-2">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white-2">
+                                    <input type="radio" name="color" id="white-2">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown-2">
+                                    <input type="radio" name="color" id="brown-2">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black-2">
+                                    <input type="radio" name="color" id="black-2">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1-2">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product" id="product3">
+                <div class="image-gallery">
+                    <img src="../imagini/lighting2.webp" id="productImg3" alt="">
+                    <div class="controls">
+                        <span class="btn3 active"></span>
+                        <span class="btn3"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>FAIRFAX GOLD & GLASS CHANDELIER</h2>
+                        <h3>$110.00</h3>
+                        <h4>15% OFF</h4>
+                        <p>A row of oblong reflective finish glass lights are juxtaposed into a horizontal linear body. The shine of the metallic surface of each glass fixture lights up the room with a contemporary style instantaneously.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s-3">
+                                    <input type="radio" name="size" id="s-3">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m-3">
+                                    <input type="radio" name="size" id="m-3">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l-3">
+                                    <input type="radio" name="size" id="l-3">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white-3">
+                                    <input type="radio" name="color" id="white-3">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown-3">
+                                    <input type="radio" name="color" id="brown-3">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black-3">
+                                    <input type="radio" name="color" id="black-3">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1-3">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="../imagini/lighting3.webp" id="productImg4" alt="">
+                    <div class="controls">
+                        <span class="btn4 active"></span>
+                        <span class="btn4"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>MODERN BLACK MARBLE TABLE LAMP</h2>
+                        <h3>$150.00</h3>
+                        <h4>35% OFF</h4>
+                        <p>Our contemporary number is a tasteful combination of black marble and brass along with a contemporary shade, giving it a feel of understated luxury, lamp with its black shade brighten any of your living, bed and den spaces.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s-4">
+                                    <input type="radio" name="size" id="s-4">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m-4">
+                                    <input type="radio" name="size" id="m-4">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l-4">
+                                    <input type="radio" name="size" id="l-4">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white-4">
+                                    <input type="radio" name="color" id="white-4">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown-4">
+                                    <input type="radio" name="color" id="brown-4">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black-4">
+                                    <input type="radio" name="color" id="black-4">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1-4">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+   
+    
+    <!-- Footer -->
+    <footer>
+        <div class="frow">
+            <div class="fcol">
+                <img src="../imagini/logo.png" class="flogo">
+            </div>
+            <div class="fcol1">
+                <h3>Contact</h3>
+                <p>B-dul Victoriei 5</p>
+                <p>Sibiu</p>
+                <p>Romania</p>
+                <p class="email-id">contact.delicatehues@gmail.com</p>
+                <h4>+91 - 0123456879</h4>
+            </div>
+            <div class="fcol1">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Decor/decor.html">Decor</a></li>
+                    <li><a href="../Candles/candles&lighting.html">Candles&Lightning</a></li>
+                    <li><a href="../Tableware/tableware.html">Tableware</a></li>
+                    <li><a href="../Vases/vases&flowers.html">Vases&Flowers</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                    <li><a href="../Login/login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="fcol1">
+                <h3>Newsletter</h3><br>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="icons">
+                    <a href="https://www.facebook.com/"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-black-2019.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/delicate.hues/?hl=en"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram"></a>
+                    <a href="https://twitter.com/"><img src="https://th.bing.com/th/id/OIF.JHfJcR7FvUaUJ3QWOi3M7w?rs=1&pid=ImgDetMain" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script-candles.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

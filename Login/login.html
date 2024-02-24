@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./login-style.css">
+    <script src="https://kit.fontawesome.com/9b09ceb685.js" crossorigin="anonymous"></script>
+</head>
+<body >
+<!-- Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <img src="../imagini/logo.png" class="logo">
+            <div>
+                <a href="../Home/index.html" >Home</a>
+                <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../Decor/decor.html">Decor</a>
+                    <a href="../Candles/candles&lighting.html">Candles & Lighting</a>
+                    <a href="../Tableware/tableware.html">Tableware</a>
+                    <a href="../Vases/vases&flowers.html">Vases & Flowers</a>
+                </div>
+                </div> 
+                <a href="../Contact/contact.html">Contact</a>
+                <a href="../Login/login.html"  class="active"><abbr title="Sign In/Register" class="login-tab"><i class="fa-regular fa-user"></i></abbr></a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="login-form" class="login-page">
+            <!-- form-box -->
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+                <!-- login form -->
+                <form id="login" class="input-group-login">
+                    <input type="email" class="input-field" id="loginEmail" placeholder="Enter your e-mail address" required><br>
+                    <input type="password" class="input-field" id="loginPassword" placeholder="Enter your password" required><br>
+                    <div class="checkbox"><input type="checkbox" class="check-box"><span class="remember-password">Remember Password</span></div><br>
+                    <button type="submit" class="submit-btn" onclick="loginFunc()">Log in</button>
+                </form>
+                <!-- registration form -->
+                <form id="register" class="input-group-register" onsubmit="return validateForm()">
+                    <input type="text" class="input-field" id="registerFirstName" placeholder="First Name" required>
+                    <input type="text" class="input-field" id="registerLastName" placeholder="Last Name" required>
+                    <input type="email" class="input-field" id="registerEmail" placeholder="E-mail address" required>
+                    <input type="password" class="input-field" id="registerPassword" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" id="confirmPassword" placeholder="Confirm Password" required>
+                    <div class="checkbox"><input type="checkbox" class="check-box" id="termsCheckbox"><span class="terms-conditions">I agree to the terms and conditions</span></div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+<!-- Footer -->
+<footer>
+    <div class="frow">
+        <div class="fcol">
+            <img src="../imagini/logo.png" class="flogo">
+        </div>
+        <div class="fcol1">
+            <h3>Contact</h3>
+            <p>B-dul Victoriei 5</p>
+            <p>Sibiu</p>
+            <p>Romania</p>
+            <p class="email-id">contact.delicatehues@gmail.com</p>
+            <h4>+91 - 0123456879</h4>
+        </div>
+        <div class="fcol1">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../Decor/decor.html">Decor</a></li>
+                <li><a href="../Candles/candles&lighting.html">Candles&Lightning</a></li>
+                <li><a href="../Tableware/tableware.html">Tableware</a></li>
+                <li><a href="../Vases/vases&flowers.html">Vases&Flowers</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+                <li><a href="../Login/login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="fcol1">
+            <h3>Newsletter</h3><br>
+            <form>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="icons">
+                <a href="https://www.facebook.com/"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-black-2019.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/delicate.hues/?hl=en"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram"></a>
+                <a href="https://twitter.com/"><img src="https://th.bing.com/th/id/OIF.JHfJcR7FvUaUJ3QWOi3M7w?rs=1&pid=ImgDetMain" alt="twitter"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="./script-login.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+</html>

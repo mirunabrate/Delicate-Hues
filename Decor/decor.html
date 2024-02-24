@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style-decor.css">
+    <script src="https://kit.fontawesome.com/9b09ceb685.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <img src="../imagini/logo.png" class="logo">
+            <div>
+                <a href="../Home/index.html">Home</a>
+                <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../Decor/decor.html" class="active">Decor</a>
+                    <a href="../Candles/candles&lighting.html">Candles & Lighting</a>
+                    <a href="../Tableware/tableware.html">Tableware</a>
+                    <a href="../Vases/vases&flowers.html">Vases & Flowers</a>
+                </div>
+                </div> 
+                <a href="../Contact/contact.html">Contact</a>
+                <a href="../Login/login.html"><abbr title="Sign In/Register" class="login-tab"><i class="fa-regular fa-user"></i></abbr></a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+       <div class="container">
+            <div id="slide">
+                <div class="item" style="background-image: url(../imagini/decor3.jpg);">
+                    <div class="content">
+                        <div class="name">DECOR</div>
+                        <div class="des">Explore decor objects: statues & sculptures, photo frames, office and wall decor.</div>
+                        <button onclick="scrollToDecorInfoSection()">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../imagini/decor2.jpg);">
+                    <div class="content">
+                        <div class="name">DECOR</div>
+                        <div class="des">Explore decor objects: statues & sculptures, photo frames, office and wall decor.</div>
+                        <button onclick="scrollToDecorInfoSection()">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../imagini/decor1.jpg);">
+                    <div class="content">
+                        <div class="name">DECOR</div>
+                        <div class="des">Explore decor objects: statues & sculptures, photo frames, office and wall decor.</div>
+                        <button onclick="scrollToDecorInfoSection()">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../imagini/decor.jpg);">
+                    <div class="content">
+                        <div class="name">DECOR</div>
+                        <div class="des">Explore decor objects: statues & sculptures, photo frames, office and wall decor.</div>
+                        <button onclick="scrollToDecorInfoSection()">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../imagini/decor4.jpg);">
+                    <div class="content">
+                        <div class="name">DECOR</div>
+                        <div class="des">Explore decor objects: statues & sculptures, photo frames, office and wall decor.</div>
+                        <button onclick="scrollToDecorInfoSection()">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../imagini/decor5.jpg);">
+                    <div class="content">
+                        <div class="name">DECOR</div>
+                        <div class="des">Explore decor objects: statues & sculptures, photo frames, office and wall decor.</div>
+                        <button onclick="scrollToDecorInfoSection()">See more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+       </div>
+       
+       <div class="decor-info-section" id="decor-info-section">
+            <h2>Luxury Decor</h2>
+            <h3>Buy Premium Home Decoration Items To Add Style To Your Home </h3>
+            <p>&nbsp; &nbsp; &nbsp; Home decoration collections are a great way to find inspiration for your next decorating project. These collections include a variety of decor items, from <b>Wall Art</b> to throw pillows to vases. When browsing home decoration collections, consider the theme or style you are trying to achieve. A coastal collection, for example, may include seashell-inspired decor, while a rustic collection may include wooden accents and natural materials. One great tip is to choose a collection that complements the existing decor in your home to create a cohesive look. </p>
+        </div>
+
+       <!-- Products section -->
+       <section class="main-wrap">
+             <!-- Product 1 -->
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="../imagini/decor6.webp" id="productImg" alt="">
+                    <div class="controls">
+                        <span class="btn active"></span>
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>TREE OF LIFE BlACK/GOLD METAL DECOR</h2>
+                        <h3>$150.00</h3>
+                        <h4>35% OFF</h4>
+                        <p>As nature evolves into breath-taking beauty, it gets imprinted on our wonderful Tree of Life decor with a marble base. The detailed branches molded in metal with its powdered matte black finish makes it a must-have for any contemporary home.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s">
+                                    <input type="radio" name="size" id="s">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m">
+                                    <input type="radio" name="size" id="m">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l">
+                                    <input type="radio" name="size" id="l">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white">
+                                    <input type="radio" name="color" id="white">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown">
+                                    <input type="radio" name="color" id="brown">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black">
+                                    <input type="radio" name="color" id="black">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2  -->
+            <div class="product" id="product1">
+                <div class="image-gallery">
+                    <img src="../imagini/clock3.webp" id="productImg2" alt="">
+                    <div class="controls">
+                        <span class="btn2 active"></span>
+                        <span class="btn2"></span>
+                        <span class="btn2"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>MARQUINA BLACK GLASS & METAL WALL CLOCK</h2>
+                        <h3>$250.00</h3>
+                        <h4>15% OFF</h4>
+                        <p>With resinous centers and lustrous crystalline gold veins of the natural inorganic beauty inspired by agate stone comes our Marquina black wall clock. The beauty of the agate inspired centre in shades of blue with will enrapture any audience.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s-2">
+                                    <input type="radio" name="size" id="s-2">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m-2">
+                                    <input type="radio" name="size" id="m-2">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l-2">
+                                    <input type="radio" name="size" id="l-2">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white-2">
+                                    <input type="radio" name="color" id="white-2">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown-2">
+                                    <input type="radio" name="color" id="brown-2">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black-2">
+                                    <input type="radio" name="color" id="black-2">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1-2">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="../imagini/sculpture.webp" id="productImg3" alt="">
+                    <div class="controls">
+                        <span class="btn3 active"></span>
+                        <span class="btn3"></span>
+                        <span class="btn3"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>FALCON ANTIQUE BRASS METAL SCULPTURE</h2>
+                        <h3>$180.00</h3>
+                        
+                        <p>Captured in mid-flight, our Falcon sculpture has fine naturalistic detailing etched onto the surface of its body and wings. An antique brass lustre with a distressed feel, this sculpture is perched on a black rock-like formation of burnished metal.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s-3">
+                                    <input type="radio" name="size" id="s-3">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m-3">
+                                    <input type="radio" name="size" id="m-3">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l-3">
+                                    <input type="radio" name="size" id="l-3">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white-3">
+                                    <input type="radio" name="color" id="white-3">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown-3">
+                                    <input type="radio" name="color" id="brown-3">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black-3">
+                                    <input type="radio" name="color" id="black-3">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1-3">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+                <div class="image-gallery">
+                    <img src="../imagini/decor9.webp" id="productImg4" alt="">
+                    <div class="controls">
+                        <span class="btn4 active"></span>
+                        <span class="btn4"></span>
+                        <span class="btn4"></span>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details">
+                        <h2>GEMINI BLACK & GOLD METAL & MARBLE SCULPTURE</h2>
+                        <h3>$350.00</h3>
+                        
+                        <p>Sculpture inspired by the concept of yin and yang, this modern rendition showcases an abstract, artsy look. Two faces beautifully conjoin, like a perfect puzzle piece, symbolizing the harmonious duality within Gemini.</p>
+                    </div>
+                    <div class="sizes">
+                        <form class="form">
+                            <div class="select-size">
+                                <h3>Size:</h3>
+                                <label for="s-4">
+                                    <input type="radio" name="size" id="s-4">
+                                    <span>Small</span>
+                                </label>
+                                <label for="m-4">
+                                    <input type="radio" name="size" id="m-4">
+                                    <span>Medium</span>
+                                </label>
+                                <label for="l-4">
+                                    <input type="radio" name="size" id="l-4">
+                                    <span>Large</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="colors">
+                        <form class="form">
+                            <div class="select-color">
+                                <h3>Color:</h3>
+                                <label for="white-4">
+                                    <input type="radio" name="color" id="white-4">
+                                    <span class="color-1"></span>
+                                </label>
+                                <label for="brown-4">
+                                    <input type="radio" name="color" id="brown-4">
+                                    <span class="color-2"></span>
+                                </label>
+                                <label for="black-4">
+                                    <input type="radio" name="color" id="black-4">
+                                    <span class="color-3"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="select-quantity">
+                            <h3>Quantity:</h3>
+                            <input type="number" name="quantity" id="1-4">
+                        </div>
+                    </div>
+                    <div class="sub-btn">
+                        <button class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="frow">
+            <div class="fcol">
+                <img src="../imagini/logo.png" class="flogo">
+            </div>
+            <div class="fcol1">
+                <h3>Contact</h3>
+                <p>B-dul Victoriei 5</p>
+                <p>Sibiu</p>
+                <p>Romania</p>
+                <p class="email-id">contact.delicatehues@gmail.com</p>
+                <h4>+91 - 0123456879</h4>
+            </div>
+            <div class="fcol1">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Decor/decor.html">Decor</a></li>
+                    <li><a href="../Candles/candles&lighting.html">Candles&Lightning</a></li>
+                    <li><a href="../Tableware/tableware.html">Tableware</a></li>
+                    <li><a href="../Vases/vases&flowers.html">Vases&Flowers</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                    <li><a href="../Login/login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="fcol1">
+                <h3>Newsletter</h3><br>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="icons">
+                    <a href="https://www.facebook.com/"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-black-2019.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/delicate.hues/?hl=en"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram"></a>
+                    <a href="https://twitter.com/"><img src="https://th.bing.com/th/id/OIF.JHfJcR7FvUaUJ3QWOi3M7w?rs=1&pid=ImgDetMain" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script-decor.js"></script>
+    <script src="../script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style-contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9b09ceb685.js" crossorigin="anonymous"></script></head>
+<body >
+    <!-- Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <img src="../imagini/logo.png" class="logo">
+            <div>
+                <a href="../Home/index.html">Home</a>
+                <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../Decor/decor.html">Decor</a>
+                    <a href="../Candles/candles&lighting.html">Candles & Lighting</a>
+                    <a href="../Tableware/tableware.html">Tableware</a>
+                    <a href="../Vases/vases&flowers.html">Vases & Flowers</a>
+                </div>
+                </div> 
+                <a href="../Contact/contact.html" class="active">Contact</a>
+                <a href="../Login/login.html"><abbr title="Sign In/Register" class="login-tab"><i class="fa-regular fa-user"></i></abbr></a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contact">
+            <div class="content">
+                <h2>Contact us</h2>
+                <p>Welcome to our <i>Contact Us</i> page! We're here to listen. Have questions or suggestions? Use the contact form or the information below to reach us.<br> Thank you for being with us!</p>
+            </div>
+            <div class="container-contact">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>                          
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>B-dul Victoriei 5,<br>Sibiu, Romania,<br>550600</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+91 - 0123456879</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>contact.delicatehues@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form id="contact-Form">
+                        <h2>Send Message</h2>
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="name">
+                    
+                        <div id="nameError" class="error-message"></div>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    
+                        <div id="emailError" class="error-message"></div>
+                    
+                        <label for="message">Type your message:</label>
+                        <textarea type="text" id="message" name="message"></textarea>
+                    
+                        <div id="messageError" class="error-message"></div>
+                    
+                        <button class="form-button" type="button" onclick="validateForm()">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+           
+    </main>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="frow">
+            <div class="fcol">
+                <img src="../imagini/logo.png" class="flogo">
+            </div>
+            <div class="fcol1">
+                <h3>Contact/h3>
+                <p>B-dul Victoriei 5</p>
+                <p>Sibiu</p>
+                <p>Romania</p>
+                <p class="email-id">contact.delicatehues@gmail.com</p>
+                <h4>+91 - 0123456879</h4>
+            </div>
+            <div class="fcol1">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Decor/decor.html">Decor</a></li>
+                    <li><a href="../Candles/candles&lighting.html">Candles&Lightning</a></li>
+                    <li><a href="../Tableware/tableware.html">Tableware</a></li>
+                    <li><a href="../Vases/vases&flowers.html">Vases&Flowers</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                    <li><a href="../Login/login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="fcol1">
+                <h3>Newsletter</h3><br>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="icons">
+                    <a href="https://www.facebook.com/"><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-black-2019.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/delicate.hues/?hl=en"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram"></a>
+                    <a href="https://twitter.com/"><img src="https://th.bing.com/th/id/OIF.JHfJcR7FvUaUJ3QWOi3M7w?rs=1&pid=ImgDetMain" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../Contact/script-contact.js"></script>
+  
+</body>
+</html>

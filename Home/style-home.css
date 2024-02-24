@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@200;300;400;600;700;900&family=Kalnia:wght@200;500;600&family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Tilt+Neon&display=swap');
+
+
+/* Slideshow Container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img{
+    height: 780px;
+}
+.titletext{
+  color: #f2f2f2;
+  font-size: 36px;
+  padding: 8px 12px;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+.subtitletext{
+    color: #f2f2f2;
+    font-size: 28px;
+    padding: 8px 12px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 250px;
+    left: 400px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 20px 12px;
+    position: absolute;
+    bottom: 220px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* About Us section */
+.about-us-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    height: 350px;
+    margin-bottom: 100px;
+}
+.about-us-title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 80px;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+.about-us-section {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    font-size: 20px;
+}
+
+/* Section 2 - Quote */
+.section2{
+    width: 100%;
+    height: 500px;
+    background-image: url('../imagini/corporate-building-with-minimalist-empty-room.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+}
+.section2-p{
+    width: 500px;
+    margin-left: 550px;
+    margin-top: 120px;
+    color: rgb(52, 52, 52);
+}
+.section2-p :first-child{
+    font-size: 18px;
+    font-style: italic;
+}
+.section2-p :nth-child(2){
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+/* Section - Category Presentation */
+.content{
+    width: 100%;
+    min-height: 40vh;
+    margin: 50px 0px;
+    padding: 40px;
+    position: relative;
+    transform: translateY(0%);
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(253, 253, 253, 0.831),rgba(255, 252, 252, 0.75)), url(../imagini/vases7.jpg);
+    background-position: center;
+}
+.categories-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: left;
+    color: #000;
+}
+.categories-title h2{
+    font-size: 54px;
+    width: 200px;
+}
+.categories-title p{
+    font-size: 20px;
+}
+.content p{
+    margin: 20px 10px;
+    font-weight: 100;
+    line-height: 25px;
+}
+.card{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 35px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 40px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+    font-size: larger;
+    text-decoration: none;
+    border: 1px solid black;
+    box-shadow:  4px 12px 10px rgba(79, 78, 78, 0.792);
+   
+}
+.card1{
+    background-image: linear-gradient(rgba(211, 207, 207, 0),rgba(53, 53, 53, 0.75)), url(../imagini/decorative.jpg);
+}
+.card2{
+    background-image: linear-gradient(rgba(211, 207, 207, 0),rgba(53, 53, 53, 0.75)), url(../imagini/tableware2.jpg);
+}
+.card3{
+    background-image: linear-gradient(rgba(211, 207, 207, 0),rgba(53, 53, 53, 0.75)), url(../imagini/vases111.webp);
+}
+.card4{
+    background-image: linear-gradient(rgba(211, 207, 207, 0),rgba(53, 53, 53, 0.75)), url(../imagini/light4.jpg);
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+h5{
+    color: white;
+    font-size: 18px;
+}
+.card p{
+    font-size: 12px;
+    color: white;
+}
+
+/* Section 3 - Image + info */
+.section3 {
+    width: 100%;
+    height: 500px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+    margin: 60px 0px;
+}
+.section3-img img{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+}
+.section3-p {
+    width: 100%;
+    font-size: x-large;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 100px;
+    font-size: 16px;
+}
+
+/* Section 4 - Collections */
+.section4-collections {
+    min-height: 850px;
+    width: 100%;
+    background-color: #ebf0ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 120px 200px;
+}
+.collection-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.collection-container .collection {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.collection-container .collection h3 {
+    font-weight: 800;
+}
+.collection-container .collection p {
+    font-weight: 300;
+    width: 250px;
+}
+.collection-container .collection img {
+    height: 350px;
+    width: 250px;
+    margin-bottom: 20px;
+    transition: transform 0.7s;
+}
+.collection-container .collection img:hover{
+    transform: scaleX(1.1);
+
+}
+
+
+
+/* Reviews section */
+.reviews-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-section h2{
+    font-size: 36px;
+    width: 500px;
+    align-self: flex-start;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.reviews-row, .reviews-row:before, .reviews-row:after {
+    margin-top: 50px;
+    box-sizing: inherit;
+    width: 80%;
+}
+.reviews-column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 30px;
+    padding: 0 25px;
+}
+
+@media screen and (max-width: 650px) {
+    .reviews-column {
+      width: 100%;
+      display: block;
+    }
+}
+  
+.reviews-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.reviews-card img{
+    border-radius: 30%;
+    margin-bottom: 46px;
+}
+.reviews-container {
+    padding: 0 16px;
+} 
+.reviews-container h3{
+    font-size: 20px;
+} 
+.reviews-product {
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.checked {
+    color: orange;
+}  
+.reviews-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.reviews-button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+/* OFFERS SECTION - Portfolio Gallery Grid*/
+.offers-section{
+    width: 80%;
+    margin-left: 180px;
+    min-height: 800px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+/* Add padding BETWEEN each column */
+.row-offers,
+.row-offers > .column-offers {
+    padding: 20px;
+}
+  
+  /* Create three equal columns that floats next to each other */
+.column-offers {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+.column-offers :nth-child(4){
+    text-decoration:line-through;
+    font-size: 16px;
+}
+.column-offers :nth-child(5){
+    font-size: 18px;
+    color: rgb(148, 16, 16);
+    font-weight: 900;
+}
+  /* Clear floats after rows */ 
+.row-offers:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Content */
+.content-offers {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.content-offers img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.content-offers :nth-child(2){
+    font-style: italic;
+    color: rgb(84, 83, 83);
+}
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+/* Style the buttons */
+#myBtnContainer{
+    margin-top: 50px;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #ddd;
+}
+.btn.active-offer {
+    background-color: #666;
+    color: white;
+}
+
+/* Fade in Overlay  */
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: linear-gradient(rgba(205, 205, 205, 0.833), rgba(199, 195, 195, 0.537))
+}
+.content-offers:hover .overlay {
+    opacity: 1;
+} 
+.text-offer {
+    color: rgb(105, 8, 8);
+    font-size: 60px;
+    position: absolute;
+    font-weight: 900;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Exclusive offer - section */
+.exclusive-offer{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(207, 207, 207, 0.75),rgba(41, 41, 41, 0.75)),  url(../imagini/tableaware.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 100px 200px;
+    color:#ffffff;
+}
+.exclusive-offer button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.exclusive-offer button:hover{
+    background-color: #065c11;
+    border: 1px solid #065c11;
+}
+.ribbon {
+    margin-top: -20px;
+    margin-left: -10px;
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    background-color: #0d6c19;;
+    color: white;
+  }
+.main-p {
+    width: 550px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.second-title{
+    font-size: 64px;
+    width: 550px;
+    font-weight: 900;
+    line-height: 0.8;
+}
+
+
+
+
+@media only screen and ((min-width: 601px) and (max-width: 1200px)) {
+    .slideshow-container {
+        width: 80%;
+        position: relative;
+        margin: auto;
+    }
+      
+    .slideshow-container img{
+          height: 500px;
+    }
+      
+    .titletext{
+        font-size: 22px;
+        color: black;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+    .subtitletext{
+        font-size: 20px;
+        padding: 0px 12px;
+        top: 140px;
+        left: 120px;
+    }
+    .text {
+        font-size: 16px;
+        bottom: 80px;
+    }
+    /* About Us section */
+    .about-us-container {
+        padding: 30px 60px;
+        margin-bottom: 50px;
+    }
+    .about-us-title {
+        font-size: 24px;
+        line-height: 60px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .about-us-section {
+        font-size: 18px;
+    }
+    
+    .section2-p{
+        margin-left: 150px;
+    }
+    .content{
+        width: 80%;
+        margin-left: 100px;
+    }
+    .section3 {
+        width: 100%;
+        height: 500px;
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .section3-img img{
+        width: 400px;
+        height: 250px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 60px;
+    }
+    .section3-p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+
+    .section4-collections {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 150px;
+    }
+    
+    .collection-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    
+    .collection-container .collection {
+        height: 550px;
+        margin-bottom: 30px;
+    }
+    
+    .collection-container .collection h3 {
+        font-weight: 800;
+    }
+    
+    .collection-container .collection p {
+        font-weight: 300;
+        width: 250px;
+    }
+    
+    .collection-container .collection img {
+        height: 350px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .offers-section{
+        width: 80%;
+        margin-left: 100px;
+        min-height: 800px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+      
+    .slideshow-container img{
+          height: 350px;
+    }
+      
+    .titletext{
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+    .subtitletext{
+        font-size: 14px;
+        padding: 0px 12px;
+        top: 80px;
+        left: 75px;
+    }
+    .text {
+        font-size: 12px;
+        bottom: 20px;
+    }
+    /* About Us section */
+    .about-us-container {
+        padding: 30px 35px;
+        margin: 0px 10px;
+    }
+    .about-us-title {
+        font-size: 20px;
+        line-height: 40px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .about-us-section {
+        font-size: 14px;
+    }
+    
+    .section2-p{
+        margin-left: 100px;
+        margin-top: 180px;
+        color: white;
+    }
+    .content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .categories-title{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .content p{
+        margin: 10px;
+        font-weight: 100;
+        line-height: 20px;
+    }
+    .card{
+        width: 200px;
+        height: 220px;
+        margin: 20px 15px;
+    }
+
+    .section3 {
+        width: 80%;
+        height: 400px;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3-img img{
+        width: 400px;
+        height: 250px;
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+    .section3-p {
+        width: 400px;
+        font-size: 14px;
+        padding: 50px 50px 100px;
+        margin-left: 30px;
+    }
+    .section4-collections {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 50px;
+    }
+    .second-title{
+        font-size: 34px;
+        width: 300px;
+    }
+    .main-p{
+        width: 350px;
+        margin-top: 20px;
+    }
+    
+    .collection-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    
+    .collection-container .collection {
+        height: 550px;
+        margin-bottom: 30px;
+    }
+    .collection-container .collection h3 {
+        font-weight: 800;
+    }
+    .collection-container .collection p {
+        font-weight: 300;
+        width: 250px;
+    }
+    .collection-container .collection img {
+        height: 320px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+   
+    .reviews-section .second-title{
+        margin: 50px 30px 0px;
+        font-size: 30px;
+        width: 350px;
+    }
+
+    .offers-section{
+        width: 100%;
+        margin-left: 10px;
+        min-height: 800px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    /* Add padding BETWEEN each column */
+    .row-offers,
+    .row-offers > .column-offers {
+        padding: 3px;
+    }
+    /* Create three equal columns that floats next to each other */
+    .column-offers {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide all elements by default */
+        height: 250px;
+    }
+    .column-offers :nth-child(4){
+        font-size: 14px;
+    }
+    .column-offers :nth-child(5){
+        font-size: 16px;
+    }
+    /* Content */
+    .content-offers {
+        padding: 10px;
+    }
+    .content-offers img{
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+    /* The "show" class is added to the filtered elements */
+    .show {
+        display: block;
+    }
+}
