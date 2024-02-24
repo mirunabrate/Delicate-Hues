@@ -42,13 +42,13 @@ function showSlides() {
 // adds an event listener for the "Check Out the Product" button
 // and redirects the user to the "decor.html" page at the section with the id "product1".
 document.getElementById('checkProductButton1').addEventListener('click', function() {
-  window.location.href = '../Decor/decor.html#product1';
+  window.location.href = './Decor/decor.html#product1';
 });
 document.getElementById('checkProductButton2').addEventListener('click', function() {
-  window.location.href = '../Vases/vases&flowers.html#product2';
+  window.location.href = './Vases/vases&flowers.html#product2';
 });
 document.getElementById('checkProductButton3').addEventListener('click', function() {
-  window.location.href = '../Candles/candles&lighting.html#product3';
+  window.location.href = './Candles/candles&lighting.html#product3';
 });
 
 
